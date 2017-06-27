@@ -12,8 +12,8 @@ makeCacheMatrix <- function(x = matrix()) {
   minv<-NULL
   set<- function(y)
   {
-    x<-y
-    minv<-NULL
+    x<<-y
+    minv<<-NULL
   }
   get<- function() x
   setinv<- function(Pinvmatrix) minv<<-Pinvmatrix
